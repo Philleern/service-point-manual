@@ -1,0 +1,61 @@
+.stepCard {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid rgb(0 82 114 / 0.12);
+  border-radius: 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fcfd 100%);
+  box-shadow: 0 14px 34px rgb(0 73 102 / 0.08);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+.number {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #dff4fb;
+  color: #005873;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.body {
+  margin-bottom: 1rem;
+}
+
+.placeholder {
+  border: 2px dashed rgb(0 126 168 / 0.32);
+  border-radius: 16px;
+  padding: 1rem;
+  background:
+    linear-gradient(135deg, rgb(0 126 168 / 0.08), rgb(0 173 181 / 0.05)),
+    #fff;
+}
+
+.placeholderLabel {
+  margin: 0 0 0.25rem;
+  color: #005873;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.placeholderText {
+  margin: 0 0 0.5rem;
+}
+
+.placeholder code {
+  word-break: break-all;
+}

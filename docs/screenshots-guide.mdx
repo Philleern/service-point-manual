@@ -1,0 +1,48 @@
+---
+id: screenshots-guide
+title: Screenshots-guide
+description: Hvordan ta og navngi screenshots til manualen.
+---
+
+# Screenshots-guide
+
+Denne siden beskriver hvordan screenshots skal tas og legges inn i repoet.
+
+## Hvor lagres bildene?
+
+- Alle PDA-bilder legges i `static/img/pda/`.
+- Bruk navnekonvensjonen `<side>-<steg>-kortnavn.png`.
+- Eksempel: `utlevering-ordinaer-01-skann-hentekode.png`
+
+## Anbefalt format
+
+- Filformat: `PNG`
+- Retning: portrett når skjermbildet er fra PDA
+- Oppløsning: behold original størrelse eller eksporter rundt `720 px` bredde
+- Beskjæring: ta med hele skjermbildet, ikke bare feltet du trykket på
+
+## Hvordan ta screenshot av PDA
+
+1. Gå til nøyaktig skjermbilde i PDA-en.
+2. Ta screenshot med enhetens innebygde kombinasjon eller via administrasjonsverktøyet som brukes lokalt.
+3. Beskjær kun bort svart kant eller irrelevant bakgrunn.
+4. Lagre som `PNG` med riktig filnavn.
+5. Legg filen i `static/img/pda/`.
+
+## Hvordan referere til bildet i docs
+
+Bruk samme filnavn i docs-siden:
+
+```md
+![TODO: Skjermbilde – skann hentekode](/img/pda/utlevering-ordinaer-01-skann-hentekode.png)
+```
+
+## Kvalitetskrav
+
+- Ett screenshot per kritiske skjermbilde eller bekreftelse
+- Vis alltid `OK`-skjerm før utlevering når prosedyren krever det
+- Ikke inkluder personopplysninger i nye screenshots uten å maskere dem
+
+:::note
+Frem til endelige screenshots er lagt inn, brukes TODO-plassholdere med korrekt filnavn slik at det er tydelig hva som mangler.
+:::

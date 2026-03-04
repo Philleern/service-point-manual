@@ -1,0 +1,88 @@
+---
+id: utlevering-ordinaer
+title: Ordinær utlevering
+description: Standard utlevering med hentekode, skann, signatur og OK-bekreftelse.
+---
+
+import ProcedureStep from '@site/src/components/ProcedureStep';
+
+# Ordinær utlevering
+
+## Når brukes dette?
+
+Når kunden henter en pakke og PDA ikke krever ekstra ID-kontroll utover vanlig utleveringsflyt.
+
+## Mål
+
+Riktig pakke skal finnes, skannes, signeres og bekreftes før den leveres ut.
+
+<ProcedureStep
+  number={1}
+  title="Skann eller tast inn hentekode"
+  image="/img/pda/utlevering-ordinaer-01-skann-hentekode.png"
+  alt="TODO: Skjermbilde – skann hentekode i Utlevering"
+>
+Kunden kan vise strekkode, QR-kode eller en femsifret kode. Skann koden med skanneknappen på siden av PDA-en, eller tast den inn manuelt.
+
+![TODO: Skjermbilde – skann hentekode](/img/pda/utlevering-ordinaer-01-skann-hentekode.png)
+</ProcedureStep>
+
+<ProcedureStep
+  number={2}
+  title="Finn pakken i hyllen"
+  image="/img/pda/utlevering-ordinaer-02-finn-pakke.png"
+  alt="TODO: Skjermbilde – finn pakke med avsender, mottaker og lokasjon"
+>
+Bruk `Avsender`, `Mottaker`, `Lokasjon` og kollinummer som vises på skjermen for å hente riktig pakke. Hvis det er flere kolli, kan du trykke på kolliet for mer informasjon.
+
+![TODO: Skjermbilde – finn pakken i hyllen](/img/pda/utlevering-ordinaer-02-finn-pakke.png)
+</ProcedureStep>
+
+<ProcedureStep
+  number={3}
+  title="Kontroller at riktig kolli er skannet"
+  image="/img/pda/utlevering-ordinaer-03-gronn-bekreftelse.png"
+  alt="TODO: Skjermbilde – grønn bekreftelse på riktig skannet kolli"
+>
+Når riktig kolli er skannet blir lokasjon og kollinummer grønne, og en grønn hake vises til venstre. Trykk deretter `Fortsett`.
+
+![TODO: Skjermbilde – grønn bekreftelse](/img/pda/utlevering-ordinaer-03-gronn-bekreftelse.png)
+</ProcedureStep>
+
+<ProcedureStep
+  number={4}
+  title="Ta imot signatur"
+  image="/img/pda/utlevering-ordinaer-04-signatur.png"
+  alt="TODO: Skjermbilde – signaturfelt ved ordinær utlevering"
+>
+Be kunden signere på skjermen. Hvis emballasjen er skadet, bruk `Skade` i signaturbildet før du fortsetter.
+
+![TODO: Skjermbilde – signatur](/img/pda/utlevering-ordinaer-04-signatur.png)
+</ProcedureStep>
+
+<ProcedureStep
+  number={5}
+  title="Trykk OK og lever ut pakken"
+  image="/img/pda/utlevering-ordinaer-05-levert.png"
+  alt="TODO: Skjermbilde – levert/OK før pakken overrekkes"
+>
+Trykk `OK`. Lever først ut pakken når sluttbildet i PDA bekrefter at pakken kan utleveres.
+
+![TODO: Skjermbilde – levert/OK](/img/pda/utlevering-ordinaer-05-levert.png)
+</ProcedureStep>
+
+## Kontrollpunkt
+
+- Utlever aldri før linjen blir grønn og du har trykket `Fortsett`.
+- Utlever aldri før `OK` er trykket og leveringsbildet vises.
+- Ved flere kolli til samme kunde kan flere hentekoder legges til etter første kode.
+
+:::warning Viktig
+Hvis du vil fjerne et kolli fra utleveringslisten, bruk menyen med tre prikker ved kolliet. Det fjerner bare kolliet fra den aktuelle utleveringen, ikke fra systemet.
+:::
+
+## Vanlige feil
+
+- Feil pakke hentet fra hyllen: kontroller lokasjon og kollinummer på nytt.
+- Kunden får ikke signert: se [PDA-problemer](./pda-problemer).
+- Pakken finnes ikke der skjermen sier: se [Mangler ankomstregistrering](./mangler-ankomstregistrering).

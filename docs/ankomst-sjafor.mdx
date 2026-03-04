@@ -1,0 +1,69 @@
+---
+id: ankomst-sjafor
+title: Ankomst sjåfør
+description: Registrer ankomne pakker og knytt dem til riktig hyllelokasjon.
+---
+
+import ProcedureStep from '@site/src/components/ProcedureStep';
+
+# Ankomst sjåfør
+
+## Når brukes dette?
+
+Når sjåføren leverer inn pakker som skal registreres og plasseres i hyller for senere henting.
+
+## Mål
+
+Hver pakke skal få riktig hyllelokasjon slik at den blir enkel å finne igjen ved utlevering.
+
+<ProcedureStep
+  number={1}
+  title="Skann hyllelokasjon"
+  image="/img/pda/ankomst-sjafor-01-skann-lokasjon.png"
+  alt="TODO: Skjermbilde – skann hyllelokasjon i Ankomst sjåfør"
+>
+Skann strekkoden på hyllen du skal bruke, for eksempel `A1` eller `B2`.
+
+![TODO: Skjermbilde – skann hyllelokasjon](/img/pda/ankomst-sjafor-01-skann-lokasjon.png)
+</ProcedureStep>
+
+<ProcedureStep
+  number={2}
+  title="Skann pakkene som skal inn på lokasjonen"
+  image="/img/pda/ankomst-sjafor-02-skann-kolli.png"
+  alt="TODO: Skjermbilde – skann kolli i valgt lokasjon"
+>
+Skann etiketten på hver pakke som skal stå i den valgte hyllen. Fortsett til alle pakker for den lokasjonen er registrert.
+
+![TODO: Skjermbilde – skann kolli](/img/pda/ankomst-sjafor-02-skann-kolli.png)
+</ProcedureStep>
+
+<ProcedureStep
+  number={3}
+  title="Fullfør registreringen"
+  image="/img/pda/ankomst-sjafor-03-fullfor.png"
+  alt="TODO: Skjermbilde – fullfør Ankomst sjåfør"
+>
+Trykk pil tilbake øverst til venstre for å fullføre registreringen når alle pakker er skannet.
+
+![TODO: Skjermbilde – fullfør registreringen](/img/pda/ankomst-sjafor-03-fullfor.png)
+</ProcedureStep>
+
+## Kontrollpunkt
+
+- Både lokasjon og kolli-ID må være skannet før pakken er registrert ankommet.
+- Nyeste skann på kolliet blir gjeldende lokasjon. Hvis samme pakke først skannes på `A1` og senere på `A2`, blir `A2` stående.
+
+:::tip Tips
+Spre pakkene over flest mulig hyllelokasjoner. Det gjør dem raskere å finne ved henting.
+:::
+
+:::note NB
+PDF-en anbefaler å skanne esker først og poser etterpå. Det gjør sorteringen i hyllene enklere.
+:::
+
+## Vanlige feil
+
+- Feilmelding ved ankomstregistrering: følg teksten i PDA og kontroller at riktig etikett er skannet.
+- Fysisk pakke uten lokasjon i systemet: se [Mangler ankomstregistrering](./mangler-ankomstregistrering).
+- Problemer med skanning: se [PDA-problemer](./pda-problemer).
