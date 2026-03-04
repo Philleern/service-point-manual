@@ -70,24 +70,26 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+    announcementBar: {
+      id: 'service-point-branding',
+      content:
+        'PostNord Service Point-manual: driftssikre rutiner for mottak, utlevering og avvik.',
+      backgroundColor: '#003B5C',
+      textColor: '#ffffff',
+      isCloseable: false,
+    },
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'Service Point-håndbok',
+      title: 'Service Point',
       logo: {
         alt: 'PostNord Service Point',
-        src: 'img/logo.svg',
+        src: 'img/postnord-app-logo.webp',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'manualSidebar',
-          position: 'left',
-          label: 'Manual',
-        },
         {
           type: 'doc',
           docId: 'endringslogg',
