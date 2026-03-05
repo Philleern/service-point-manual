@@ -1,6 +1,0 @@
-<svg width="220" height="42" viewBox="0 0 220 42" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PostNord Service Point">
-  <rect x="0" y="0" width="42" height="42" rx="10" fill="#0A6E8A"/>
-  <path d="M12 30V12h9.2c5 0 8.4 3.4 8.4 8.3 0 5-3.4 8.4-8.4 8.4H17v1.3h-5Zm5-5.6h4.1c2.4 0 3.9-1.5 3.9-4 0-2.4-1.5-3.9-3.9-3.9H17v7.9Z" fill="#FFFFFF"/>
-  <text x="52" y="18" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#003B5C">POSTNORD</text>
-  <text x="52" y="33" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#0A6E8A">Service Point-håndbok</text>
-</svg>
